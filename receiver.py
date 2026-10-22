@@ -43,8 +43,8 @@ while True:
             display.show(Image.SAD)
             door_state = "disconnected"
 
-    # Toggle the heartbeat pixel every 2 seconds (2000 milliseconds)
-    if current_time - last_blink_time > 2000:
+    # Toggle the heartbeat pixel every 1 seconds (1000 milliseconds)
+    if current_time - last_blink_time > 1000:
         blink_intensity = 7 if blink_intensity == 0 else 0
         last_blink_time = current_time
         
